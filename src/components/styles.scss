@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+$white: #fff;
+$black: #444;
+$purple: #5a4ac7;
+$light-purple: #6a5acd;
+$light-purple1: #a299d8;
+$grey-light: #f8f8f8;
+$grey-light1: #efefef;
+$grey-dark: #333;
+$grey-dark1: #666;
+$grey-dark2: #999;
+$red: #e32636;
+* {
+  font-family: "Roboto", sans-serif;
+  color: $black;
+}
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+p,
+span {
+  font-size: 14px;
+}
+.category-list-wrapper {
+  height: 100vh;
+  background-color: $grey-light;
+  position: fixed !important;
+  overflow: hidden;
+  .nav-profile-pic {
+    height: 18%;
+    width: 60%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 20% auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+.category-list {
+  padding-left: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin-top: 25%;
+  align-items: center;
+  list-style-type: none;
+  text-align: left;
+}
+
+.category-list {
+  li.item {
+    margin: 10% 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    &.active {
+      color: $purple;
+    }
+    &:hover:not(.active) {
+      color: $grey-dark1;
+    }
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  position: relative;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  .about-wrapper {
+    background-image: url("../assets/profile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 100vh;
+    .overlay {
+      height: 100%;
+      width: 100%;
+      background-color: $purple;
+      opacity: 0.8;
+      position: absolute;
+      z-index: 0;
+    }
+    // &:before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 5%;
+    //   height: 100%;
+    //   background-color: $purple;
+    //   transform: skewX(-20deg);
+    //   opacity: 0.4;
+    //   z-index: 1;
+    //   top: 0;
+    //   left: 60%;
+    // }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+      transform: skewX(-20deg);
+      z-index: 1;
+      opacity: 0.7;
+      top: 0;
+      left: 70%;
+    }
+    .portfolio-title {
+      margin-top: 10%;
+      z-index: 1;
+      margin-left: 10%;
+      h1 {
+        font-weight: 300;
+        color: $white;
+        // span {
+        //   font-size: 16px;
+        //   font-weight: 700;
+        //   margin-right: 15px;
+        //   font-style: italic;
+        // }
+      }
+    }
+    // .profile-wrapper {
+    //   width: 45%;
+    //   height: 40%;
+    //   border-radius: 50%;
+    //   margin-top: 10%;
+    //   overflow: hidden;
+    //   .profile {
+    //     width: 140%;
+    //     margin-left: -20%;
+    //   }
+    // }
+    div.about-tag {
+      margin-top: 2%;
+      z-index: 1;
+      margin-left: 10%;
+      h2 {
+        font-weight: 300;
+        color: $white;
+      }
+    }
+    div.about-content {
+      color: $white;
+      font-weight: 700;
+      margin-top: 5%;
+      margin-left: 10%;
+      width: 40%;
+      font-size: 18px;
+      font-style: italic;
+      z-index: 5;
+    }
+    div.home-social-icons {
+      position: absolute;
+      z-index: 2;
+      right: 10%;
+      top: 25%;
+      list-style-type: none;
+      color: $grey-dark1;
+      margin-top: 25px;
+      &:hover {
+        color: $grey-dark;
+      }
+      cursor: pointer;
+    }
+    a {
+      margin-top: 25px;
+      display: block;
+      color: $grey-dark;
+      &:hover {
+        text-decoration: none;
+      }
+      span {
+        margin-right: 15px;
+      }
+    }
+  }
+  .contact-wrapper {
+    position: static;
+    background-color: $purple;
+    box-shadow: 0px 11px 26px -4px rgba(163, 136, 163, 0.93);
+    .contact-heading {
+      color: $white;
+      margin-top: 50px;
+      padding-top: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .contact-tagline {
+      font-style: italic;
+      color: $grey-light;
+      margin: 30px 0 20px 0;
+    }
+    .contact-form {
+      // background-color: $purple;
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      input {
+        border-radius: 0;
+        border: none;
+        height: 30px;
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      textarea {
+        border-radius: 0;
+        border: none;
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      .contact-submit {
+        border: none;
+        background-color: #9282fc;
+        color: $white;
+        padding: 5px 20px;
+        font-weight: 700;
+        span {
+          color: $white;
+          margin-right: 5px;
+        }
+      }
+    }
+    .social-icons {
+      position: absolute;
+      left: 40%;
+      padding-top: 4%;
+      font-size: 30px;
+      span {
+        margin: 0 15px;
+        color: $grey-dark1;
+        cursor: pointer;
+        &:hover {
+          color: $grey-dark;
+        }
+      }
+    }
+  }
+  .projects-wrapper {
+    height: 100vh;
+    padding: 0 5%;
+    .projects-heading {
+      color: $grey-dark1;
+      margin-top: 30px;
+      margin-bottom: 5%;
+      padding-top: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .project-card {
+        margin-bottom: 6%;
+        .project-desc-wrapper {
+          .project-title {
+            text-transform: uppercase;
+          }
+          .techElem {
+            list-style-type: none;
+            display: inline;
+            background-color: $purple;
+            color: $white;
+            font-size: 12px;
+            margin: 0 5px;
+            padding: 2px 10px;
+          }
+          .goto-link {
+            background-color: $white;
+            margin-top: 20px;
+            border: 2px solid $purple;
+            color: $purple;
+            font-size: 14px;
+            padding: 3px 8px;
+            font-weight: 700;
+            transition: all 0.3s;
+            border-radius: 0;
+            &:hover {
+              background-color: $purple;
+              color: $white;
+            }
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+        .project-snapshot {
+          padding-right: 5%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .resume-wrapper {
+    padding: 0 5%;
+    margin-bottom: 10%;
+    p,
+    span {
+      line-height: 1;
+      margin-bottom: 5px;
+      color: $grey-dark1;
+      font-style: italic;
+    }
+    .resume-title {
+      color: $grey-dark1;
+      margin-top: 30px;
+      margin-bottom: 5%;
+      padding-top: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .pdf-download {
+      float: right;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: none;
+      color: $black;
+      i {
+        color: $red;
+        margin-right: 5px;
+      }
+    }
+    .logo {
+      width: 100%;
+    }
+    .resume-section-title {
+      border-bottom: 2px solid $light-purple1;
+      margin-bottom: 20px;
+      padding-bottom: 3px;
+    }
+    .section-border {
+      background-color: $light-purple;
+      height: 2px;
+      width: 30px;
+      text-align: left;
+      margin-left: 0;
+      margin-top: 0;
+    }
+    .subsection {
+      padding-right: 30px;
+    }
+    .education-wrapper {
+      .core-subjects {
+        margin-top: 15px;
+      }
+    }
+    .experience-wrapper {
+      margin-top: 4%;
+      .work-desc {
+        margin-top: 15px;
+        margin-left: -1em;
+        li {
+          list-style-position: outside;
+          margin-left: -1em;
+          font-size: 14px;
+          color: $grey-dark1;
+        }
+      }
+    }
+    .skillset-wrapper {
+      margin-top: 4%;
+      .skill-list {
+        padding-left: 30px;
+        .skill-wrapper {
+          span {
+            font-size: 12px;
+            color: $grey-dark1;
+            font-style: normal;
+            font-weight: bold;
+          }
+          .skill {
+            width: 60%;
+            background-color: $grey-light1;
+            height: 10px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            div {
+              background-color: $light-purple;
+              height: inherit;
+              border-radius: inherit;
+            }
+          }
+        }
+      }
+    }
+    .award-wrapper {
+      margin-top: 4%;
+    }
+    .recommendation-wrapper {
+      margin-top: 4%;
+      .recommendation-list {
+        margin-top: 4%;
+        p {
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
