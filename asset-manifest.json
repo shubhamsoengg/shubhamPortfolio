@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/shubhamPortfolio/static/css/main.199a8d5c.chunk.css",
+    "main.js": "/shubhamPortfolio/static/js/main.89085c6f.chunk.js",
+    "main.js.map": "/shubhamPortfolio/static/js/main.89085c6f.chunk.js.map",
+    "runtime-main.js": "/shubhamPortfolio/static/js/runtime-main.5d3c485d.js",
+    "runtime-main.js.map": "/shubhamPortfolio/static/js/runtime-main.5d3c485d.js.map",
+    "static/css/2.5485aa58.chunk.css": "/shubhamPortfolio/static/css/2.5485aa58.chunk.css",
+    "static/js/2.5a270ccb.chunk.js": "/shubhamPortfolio/static/js/2.5a270ccb.chunk.js",
+    "static/js/2.5a270ccb.chunk.js.map": "/shubhamPortfolio/static/js/2.5a270ccb.chunk.js.map",
+    "index.html": "/shubhamPortfolio/index.html",
+    "precache-manifest.7e3f91fa8edb2366a25bfd6d22d20b6c.js": "/shubhamPortfolio/precache-manifest.7e3f91fa8edb2366a25bfd6d22d20b6c.js",
+    "service-worker.js": "/shubhamPortfolio/service-worker.js",
+    "static/css/2.5485aa58.chunk.css.map": "/shubhamPortfolio/static/css/2.5485aa58.chunk.css.map",
+    "static/css/main.199a8d5c.chunk.css.map": "/shubhamPortfolio/static/css/main.199a8d5c.chunk.css.map",
+    "static/js/2.5a270ccb.chunk.js.LICENSE.txt": "/shubhamPortfolio/static/js/2.5a270ccb.chunk.js.LICENSE.txt",
+    "static/media/SHUBHAM_GOYAL_RESUME.pdf": "/shubhamPortfolio/static/media/SHUBHAM_GOYAL_RESUME.6b55ca5d.pdf",
+    "static/media/asu_logo.png": "/shubhamPortfolio/static/media/asu_logo.090e3549.png",
+    "static/media/aus_open_viz.png": "/shubhamPortfolio/static/media/aus_open_viz.d14668c0.png",
+    "static/media/bms_logo.png": "/shubhamPortfolio/static/media/bms_logo.c88a71ba.png",
+    "static/media/covid_viz.png": "/shubhamPortfolio/static/media/covid_viz.677ecd48.png",
+    "static/media/font-awesome.min.css": "/shubhamPortfolio/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/ge_logo.png": "/shubhamPortfolio/static/media/ge_logo.dbf2df15.png",
+    "static/media/mcf_logo.png": "/shubhamPortfolio/static/media/mcf_logo.a0ddf3ec.png",
+    "static/media/profile.jpg": "/shubhamPortfolio/static/media/profile.2829b57c.jpg",
+    "static/media/profile_2.jpg": "/shubhamPortfolio/static/media/profile_2.f04808ae.jpg",
+    "static/media/sorter_viz.png": "/shubhamPortfolio/static/media/sorter_viz.b50b9390.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d3c485d.js",
+    "static/css/2.5485aa58.chunk.css",
+    "static/js/2.5a270ccb.chunk.js",
+    "static/css/main.199a8d5c.chunk.css",
+    "static/js/main.89085c6f.chunk.js"
+  ]
+}
